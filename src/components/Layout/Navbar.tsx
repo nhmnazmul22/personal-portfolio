@@ -1,4 +1,4 @@
-const RightSidebar = () => {
+const Navbar = () => {
   return (
     <div className="">
       <h1>Right Sidebar</h1>
@@ -6,4 +6,4 @@ const RightSidebar = () => {
   );
 };
 
-export default RightSidebar;
+export default Navbar;

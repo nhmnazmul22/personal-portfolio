@@ -1,17 +1,17 @@
-import LeftSideBar from "@/components/Layout/LeftSideBar";
-import RightSidebar from "@/components/Layout/RightSidebar";
+import AppSidebar from "@/components/Layout/AppSidebar";
+import Navbar from "@/components/Layout/Navbar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex w-full min-h-screen">
-      <LeftSideBar />
+      <AppSidebar />
       <main className="flex-1">
         <SidebarTrigger />
         {children}
       </main>
       <div className="w-1/5">
-        <RightSidebar />
+        <Navbar />
       </div>
     </div>
   );

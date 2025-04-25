@@ -1,12 +1,16 @@
 import {
   Dribbble,
   FacebookIcon,
+  Hash,
   Instagram,
   Linkedin,
   Twitter,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
+import { Progress } from "../ui/progress";
 import { Separator } from "../ui/separator";
 import {
   Sidebar,
@@ -15,7 +19,7 @@ import {
   SidebarGroupContent,
 } from "../ui/sidebar";
 
-const LeftSideBar = () => {
+const AppSidebar = () => {
   return (
     <Sidebar>
       <SidebarContent className="p-5 bg-secondary">
@@ -63,29 +67,80 @@ const LeftSideBar = () => {
         </SidebarGroup>
         <Separator className="bg-custom-white" />
         <SidebarGroup>
-          <SidebarGroupContent className="flex flex-col space-y-3 text-md">
+          <SidebarGroupContent className="flex flex-col space-y-2 text-sm">
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow">Age:</Badge>
+              <Badge className="bg-custom-yellow font-medium">Age:</Badge>
               <p className="text-custom-white">24</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow">Residence:</Badge>
+              <Badge className="bg-custom-yellow font-medium">Residence:</Badge>
               <p className="text-custom-white">Bangladesh</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow">Freelance:</Badge>
+              <Badge className="bg-custom-yellow font-medium">Freelance:</Badge>
               <p className=" text-success">Available</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow">Religion:</Badge>
+              <Badge className="bg-custom-yellow font-medium">Religion:</Badge>
               <p className="text-custom-white">Muslim</p>
             </div>
           </SidebarGroupContent>
         </SidebarGroup>
-        
+        <Separator className="bg-custom-white " />
+        <SidebarGroup>
+          <SidebarContent>
+            <p className="text-lg">Language</p>
+            <div className="flex flex-col space-y-3">
+              <div className="text-sm">
+                <div className="flex justify-between mb-1 w-full ">
+                  <p>Bangla</p>
+                  <p>100%</p>
+                </div>
+                <Progress value={100} className="" />
+              </div>
+              <div className="text-sm">
+                <div className="flex justify-between mb-1 w-full ">
+                  <p>English</p>
+                  <p>70%</p>
+                </div>
+                <Progress value={70} className="" />
+              </div>
+            </div>
+          </SidebarContent>
+        </SidebarGroup>
+        <Separator className="bg-custom-white" />
+        <SidebarGroup>
+          <SidebarGroupContent>
+            <p className="text-lg">Extra Skills</p>
+            <div className="flex flex-col space-y-1 mt-2">
+              <p className="flex gap-2 items-center">
+                <Hash className="w-5 text-custom-yellow" />
+                Bootstrap, Materialize
+              </p>
+              <p className="flex gap-2 items-center">
+                <Hash className="w-5 text-custom-yellow" />
+                Stylus, Sass, Less
+              </p>
+              <p className="flex gap-2 items-center">
+                <Hash className="w-5 text-custom-yellow" />
+                Gulp, Webpack, Grunt
+              </p>
+              <p className="flex gap-2 items-center">
+                <Hash className="w-5 text-custom-yellow" />
+                GIT Knowledge
+              </p>
+            </div>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        <Separator className="bg-custom-white" />
+        <Link href="/" className="w-full">
+          <Button className="bg-custom-yellow text-md hover:bg-custom-yellow hover:scale-[1.02] duration-200 w-full">
+            Download CV
+          </Button>
+        </Link>
       </SidebarContent>
     </Sidebar>
   );
 };
 
-export default LeftSideBar;
+export default AppSidebar;
