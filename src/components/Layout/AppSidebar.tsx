@@ -65,30 +65,34 @@ const AppSidebar = () => {
             </div>
           </SidebarGroupContent>
         </SidebarGroup>
-        <Separator className="bg-custom-white" />
+        <Separator className="bg-primary" />
         <SidebarGroup>
           <SidebarGroupContent className="flex flex-col space-y-2 text-sm">
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow font-medium">Age:</Badge>
-              <p className="text-custom-white">24</p>
+              <Badge className="bg-custom-yellow   font-medium">Age:</Badge>
+              <p className="text-primary">24</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow font-medium">Residence:</Badge>
-              <p className="text-custom-white">Bangladesh</p>
+              <Badge className="bg-custom-yellow  font-medium">
+                Residence:
+              </Badge>
+              <p className="text-primary">Bangladesh</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow font-medium">Freelance:</Badge>
+              <Badge className="bg-custom-yellow  font-medium">
+                Freelance:
+              </Badge>
               <p className=" text-success">Available</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow font-medium">Religion:</Badge>
-              <p className="text-custom-white">Muslim</p>
+              <Badge className="bg-custom-yellow  font-medium">Religion:</Badge>
+              <p className="text-primary">Muslim</p>
             </div>
           </SidebarGroupContent>
         </SidebarGroup>
-        <Separator className="bg-custom-white " />
+        <Separator className="bg-primary" />
         <SidebarGroup>
-          <SidebarContent>
+          <SidebarGroupContent>
             <p className="text-lg">Language</p>
             <div className="flex flex-col space-y-3">
               <div className="text-sm">
@@ -106,9 +110,9 @@ const AppSidebar = () => {
                 <Progress value={70} className="" />
               </div>
             </div>
-          </SidebarContent>
+          </SidebarGroupContent>
         </SidebarGroup>
-        <Separator className="bg-custom-white" />
+        <Separator className="bg-primary" />
         <SidebarGroup>
           <SidebarGroupContent>
             <p className="text-lg">Extra Skills</p>
@@ -132,7 +136,7 @@ const AppSidebar = () => {
             </div>
           </SidebarGroupContent>
         </SidebarGroup>
-        <Separator className="bg-custom-white" />
+        <Separator className="bg-primary" />
         <Link href="/" className="w-full">
           <Button className="bg-custom-yellow text-md hover:bg-custom-yellow hover:scale-[1.02] duration-200 w-full">
             Download CV

@@ -1,5 +1,7 @@
+import AppSidebar from "@/components/Layout/AppSidebar";
+import RightSidebar from "@/components/Layout/RightSidebar";
 import { ThemeProvider } from "@/components/theme-provider";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
@@ -26,7 +28,18 @@ export default function RootLayout({
         className={`${rubikFont.variable} ${rubikFont.className} antialiased overflow-hidden`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark">
-          <SidebarProvider>{children}</SidebarProvider>
+          <SidebarProvider>
+            <div className="flex w-full min-h-screen relative">
+              <AppSidebar />
+              <main className="flex-1">
+                <SidebarTrigger />
+                {children}
+              </main>
+              <div className="w-[80px] md:w-[100px] bg-secondary p-5 ">
+                <RightSidebar />
+              </div>
+            </div>
+          </SidebarProvider>
         </ThemeProvider>
       </body>
     </html>
