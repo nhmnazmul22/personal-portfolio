@@ -25,17 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${rubikFont.variable} ${rubikFont.className} antialiased overflow-hidden`}
+        className={`${rubikFont.variable} ${rubikFont.className} antialiased overflow-x-hidden relative`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark">
           <SidebarProvider>
             <div className="flex w-full min-h-screen relative">
               <AppSidebar />
-              <main className="flex-1">
-                <SidebarTrigger />
+              <main className="flex-1 pt-2 pe-[80px] md:pe-[100px] mb-10">
+                <SidebarTrigger className="sticky top-0" />
                 {children}
               </main>
-              <div className="w-[80px] md:w-[100px] bg-secondary p-5 ">
+              <div className="w-[80px] min-h-[100vh] md:w-[100px] bg-secondary p-5 fixed right-0 top-0">
                 <RightSidebar />
               </div>
             </div>

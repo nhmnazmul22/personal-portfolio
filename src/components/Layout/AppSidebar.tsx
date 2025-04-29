@@ -39,28 +39,19 @@ const AppSidebar = () => {
             </div>
             <div className="flex justify-between gap-3">
               <span className="bg-custom-yellow p-2 rounded-full cursor-pointer hover:scale-[1.2] duration-200">
-                <FacebookIcon
-                  size={16}
-                  className="stroke-background fill-background"
-                />
+                <FacebookIcon size={16} className="stroke-black" />
               </span>
               <span className="bg-custom-yellow p-2 rounded-full cursor-pointer hover:scale-[1.2] duration-200">
-                <Instagram size={16} className="stroke-background" />
+                <Instagram size={16} className="stroke-black" />
               </span>
               <span className="bg-custom-yellow p-2 rounded-full cursor-pointer hover:scale-[1.2] duration-200">
-                <Twitter
-                  size={16}
-                  className="stroke-background fill-background"
-                />
+                <Twitter size={16} className="stroke-black" />
               </span>
               <span className="bg-custom-yellow p-2 rounded-full cursor-pointer hover:scale-[1.2] duration-200">
-                <Linkedin
-                  size={16}
-                  className="stroke-background fill-background"
-                />
+                <Linkedin size={16} className="stroke-black" />
               </span>
               <span className="bg-custom-yellow p-2 rounded-full cursor-pointer hover:scale-[1.2] duration-200">
-                <Dribbble size={16} className="stroke-background" />
+                <Dribbble size={16} className="stroke-black" />
               </span>
             </div>
           </SidebarGroupContent>
@@ -69,23 +60,27 @@ const AppSidebar = () => {
         <SidebarGroup>
           <SidebarGroupContent className="flex flex-col space-y-2 text-sm">
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow   font-medium">Age:</Badge>
+              <Badge className="bg-custom-yellow text-black   font-medium">
+                Age:
+              </Badge>
               <p className="text-primary">24</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow  font-medium">
+              <Badge className="bg-custom-yellow text-black  font-medium">
                 Residence:
               </Badge>
               <p className="text-primary">Bangladesh</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow  font-medium">
+              <Badge className="bg-custom-yellow text-black  font-medium">
                 Freelance:
               </Badge>
               <p className=" text-success">Available</p>
             </div>
             <div className="flex justify-between">
-              <Badge className="bg-custom-yellow  font-medium">Religion:</Badge>
+              <Badge className="bg-custom-yellow text-black  font-medium">
+                Religion:
+              </Badge>
               <p className="text-primary">Muslim</p>
             </div>
           </SidebarGroupContent>
@@ -138,7 +133,7 @@ const AppSidebar = () => {
         </SidebarGroup>
         <Separator className="bg-primary" />
         <Link href="/" className="w-full">
-          <Button className="bg-custom-yellow text-md hover:bg-custom-yellow hover:scale-[1.02] duration-200 w-full">
+          <Button className="bg-custom-yellow text-md text-black hover:bg-custom-yellow hover:scale-[1.02] duration-200 w-full">
             Download CV
           </Button>
         </Link>
