@@ -1,4 +1,4 @@
-import { ServiceType } from "@/types";
+import { ServiceCategoryType, ServiceType } from "@/types";
 import {
   Building2,
   Cloud,
@@ -10,12 +10,16 @@ import {
   Figma,
   FileCode2,
   Globe,
+  Layers,
   LayoutDashboard,
   LayoutGrid,
+  LifeBuoy,
+  MonitorSmartphone,
   PlugZap,
   Puzzle,
   RefreshCcw,
   Server,
+  ServerCog,
   ShieldCheck,
   ShoppingCart,
   Wrench,
@@ -179,4 +183,31 @@ const services: ServiceType[] = [
   },
 ];
 
-export { services };
+const serviceCategories: ServiceCategoryType[] = [
+  {
+    title: "Frontend Services",
+    shortDes:
+      "Building responsive, dynamic, and beautiful interfaces with modern web technologies.",
+    icon: <MonitorSmartphone size={38} />,
+  },
+  {
+    title: "Backend Services",
+    shortDes:
+      "Creating secure, scalable server-side applications, APIs, and databases.",
+    icon: <ServerCog size={38} />,
+  },
+  {
+    title: "Full Stack Solutions",
+    shortDes:
+      "Delivering complete web solutions by combining powerful front-end and back-end technologies.",
+    icon: <Layers size={38} />,
+  },
+  {
+    title: "Maintenance and Support",
+    shortDes:
+      "Ensuring your websites stay updated, optimized, secure, and performing at their best.",
+    icon: <LifeBuoy size={38} />,
+  },
+];
+
+export { serviceCategories, services };

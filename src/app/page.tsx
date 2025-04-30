@@ -1,14 +1,16 @@
+import PageHeading from "@/components/PageHeading";
+import ServiceCategoryCard from "@/components/ServiceCategoryCard";
 import SvgAnimationIcons from "@/components/SvgAnimationIcons";
-
 import { Button } from "@/components/ui/button";
+import { serviceCategories } from "@/constants";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="pt-5">
-      <div className="container relative">
+    <div className="container py-5 max-md:py-10">
+      <div className="relative">
         <SvgAnimationIcons />
-        <div className="max-w-[900px] w-full mx-auto  mt-5">
+        <div className="w-full mx-auto mt-7 md:mt-5">
           <div className="relative z-[1]">
             <h1 className="text-4xl md:text-[46px] lg:text-6xl font-bold lg:mb-4">
               {"I'm Nhm Nazmul"}
@@ -43,7 +45,23 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+      </div>
+      <div className="mt-20">
+        <PageHeading
+          title="Services"
+          subTitle="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+        />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+          {serviceCategories.map(({ title, shortDes, icon }, index) => (
+            <ServiceCategoryCard
+              key={index}
+              title={title}
+              shortDes={shortDes}
+              icon={icon}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+"use client";
 import {
   Dribbble,
   FacebookIcon,
@@ -8,6 +9,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ToggleTheme from "../ToggleTheme";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Progress } from "../ui/progress";
@@ -22,7 +24,8 @@ import {
 const AppSidebar = () => {
   return (
     <Sidebar>
-      <SidebarContent className="p-5 bg-secondary">
+      <SidebarContent className="p-5 bg-secondary border-e border-foreground/10 relative">
+        <ToggleTheme classNames="sm:hidden" />
         <SidebarGroup>
           <SidebarGroupContent className="flex flex-col items-center space-y-4">
             <Image

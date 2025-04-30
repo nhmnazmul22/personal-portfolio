@@ -11,12 +11,16 @@ import {
 } from "lucide-react";
 import MenuItem from "../MenuItem";
 import ToggleTheme from "../ToggleTheme";
+import { SidebarTrigger } from "../ui/sidebar";
 
 const RightSidebar = () => {
   return (
-    <div className="flex flex-col items-center w-full gap-15">
-      <ToggleTheme />
-      <div className="flex flex-col items-center space-y-5">
+    <div className="flex flex-row md:flex-col justify-between items-center w-full md:gap-15 ">
+      <div className="flex sm:gap-3 items-center">
+        <SidebarTrigger className="block md:hidden" />
+        <ToggleTheme classNames="max-sm:hidden" />
+      </div>
+      <div className="flex flex-row md:flex-col items-center max-sm:space-x-1.5 space-x-3 md:space-y-5 md:space-x-0">
         <MenuItem text="Home" link="/" Icon={House} />
         <MenuItem text="Service" link="/service" Icon={FileCode2} />
         <MenuItem text="Skills" link="/skills" Icon={CodeXml} />

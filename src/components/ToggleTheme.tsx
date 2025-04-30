@@ -1,7 +1,13 @@
+"use client";
+import { cn } from "@/lib/utils";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
-const ToggleTheme = () => {
+type toggleThemeType = {
+  classNames: string;
+};
+
+const ToggleTheme: React.FC<toggleThemeType> = ({ classNames }) => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
@@ -9,15 +15,15 @@ const ToggleTheme = () => {
   };
 
   return (
-    <div className="">
+    <div className={cn(classNames)}>
       <span
-        className="bg-custom-yellow flex items-center justify-center w-10 h-10 rounded-full cursor-pointer"
+        className="bg-custom-yellow flex items-center justify-center rounded-full cursor-pointer  w-8 h-8 sm:w-10 sm:h-10"
         onClick={toggleTheme}
       >
         {theme === "dark" ? (
-          <Moon size={24} className="dark:stroke-black" />
+          <Moon className="dark:stroke-black w-[16px] sm:w-[24px]" />
         ) : (
-          <Sun size={24} className="dark:stroke-black" />
+          <Sun className="dark:stroke-black w-[16px] sm:w-[24px]" />
         )}
       </span>
     </div>

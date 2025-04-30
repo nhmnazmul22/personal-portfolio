@@ -38,7 +38,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ text, link, Icon }) => {
           href={link}
           className={`${
             isActive ? "bg-custom-yellow" : "bg-primary"
-          } flex items-center justify-center p-2 rounded-full`}
+          } flex items-center justify-center p-2 rounded-full w-8 h-8 sm:w-10 sm:h-10`}
         >
           {
             <Icon

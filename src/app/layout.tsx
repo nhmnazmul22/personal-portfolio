@@ -29,13 +29,13 @@ export default function RootLayout({
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark">
           <SidebarProvider>
-            <div className="flex w-full min-h-screen relative">
+            <div className="flex flex-col md:flex-row w-full min-h-screen relative">
               <AppSidebar />
-              <main className="flex-1 pt-2 pe-[80px] md:pe-[100px] mb-10">
-                <SidebarTrigger className="sticky top-0" />
+              <main className="flex-1 pt-2 md:pe-[100px] mb-10 order-2 md:order-none">
+                <SidebarTrigger className="sticky ms-2.5 top-0 hidden md:block" />
                 {children}
               </main>
-              <div className="w-[80px] min-h-[100vh] md:w-[100px] bg-secondary p-5 fixed right-0 top-0">
+              <div className="w-full sm:h-[80px] border-b md:border-s md:border-b-0 border-foreground/10 md:min-h-[100vh] md:w-[100px] bg-secondary p-5 order-1 md:order-none md:fixed md:right-0 md:top-0">
                 <RightSidebar />
               </div>
             </div>
