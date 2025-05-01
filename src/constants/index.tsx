@@ -1,4 +1,4 @@
-import { ServiceCategoryType, ServiceType } from "@/types";
+import { ServiceCategoryType, ServiceType, SkillsType } from "@/types";
 import {
   Building2,
   Cloud,
@@ -183,6 +183,7 @@ const services: ServiceType[] = [
   },
 ];
 
+// Service Category Constant
 const serviceCategories: ServiceCategoryType[] = [
   {
     title: "Frontend Services",
@@ -210,4 +211,48 @@ const serviceCategories: ServiceCategoryType[] = [
   },
 ];
 
-export { serviceCategories, services };
+// Skills Constant
+const skills: SkillsType[] = [
+  {
+    category: "Frontend Development",
+    skills: [
+      { name: "React.js", percent: 90 },
+      { name: "JavaScript (ES6+)", percent: 85 },
+      { name: "HTML5 & CSS3", percent: 95 },
+      { name: "Tailwind CSS / Bootstrap", percent: 90 },
+      { name: "Redux / Context API", percent: 80 },
+      { name: "Next.js (basic)", percent: 60 },
+    ],
+  },
+  {
+    category: "Backend Development",
+    skills: [
+      { name: "Node.js", percent: 85 },
+      { name: "Express.js", percent: 80 },
+      { name: "MongoDB & Mongoose", percent: 80 },
+      { name: "JWT & bcrypt", percent: 75 },
+      { name: "RESTful API", percent: 85 },
+    ],
+  },
+  {
+    category: "Tools & Workflow",
+    skills: [
+      { name: "Git & GitHub", percent: 90 },
+      { name: "VS Code", percent: 95 },
+      { name: "Postman", percent: 85 },
+      { name: "MongoDB Atlas / Compass", percent: 80 },
+      { name: "Vercel / Netlify / Render", percent: 90 },
+    ],
+  },
+  {
+    category: "Soft Skills",
+    skills: [
+      { name: "Problem-Solving", percent: 90 },
+      { name: "Teamwork", percent: 85 },
+      { name: "Continuous Learning", percent: 95 },
+      { name: "Communication", percent: 85 },
+    ],
+  },
+];
+
+export { serviceCategories, services, skills };

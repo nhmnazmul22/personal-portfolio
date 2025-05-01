@@ -4,7 +4,7 @@ import { services } from "@/constants";
 
 const page = () => {
   return (
-    <div className="container py-5">
+    <section className="container py-5">
       <PageHeading
         title="My Services"
         subTitle="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -22,7 +22,7 @@ const page = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -16,4 +16,16 @@ interface ServiceCategoryType {
   icon: JSX.Element;
 }
 
-export type { ServiceCategoryType, ServiceType };
+// Single Skills Type
+type SkillType = {
+  name: string;
+  percent: number;
+};
+
+// Skills Types
+interface SkillsType {
+  category: string;
+  skills: SkillType[];
+}
+
+export type { ServiceCategoryType, ServiceType, SkillsType };
