@@ -18,7 +18,7 @@ export default function Home() {
             <p className="text-3xl md:tex-[42px] lg:text-5xl font-semibold">
               <span className="text-custom-yellow">MERN Stack</span> Developer
             </p>
-            <p className="text-muted-foreground text-base mt-4">
+            <p className="text-muted-foreground max-sm:text-sm text-base mt-4">
               Hi there! I’m a MERN Stack Developer with a passion for creating
               dynamic, scalable, and user-friendly web applications. My
               expertise lies in React.js, Next.js, Node.js, Express.js, and

@@ -35,7 +35,7 @@ export default function RootLayout({
                 <SidebarTrigger className="sticky ms-2.5 top-0 hidden md:block" />
                 {children}
               </main>
-              <div className="w-full sm:h-[80px] border-b md:border-s md:border-b-0 border-foreground/10 md:min-h-[100vh] md:w-[100px] bg-secondary p-5 order-1 md:order-none md:fixed md:right-0 md:top-0">
+              <div className="w-full sm:h-[80px] border-b md:border-s md:border-b-0 border-foreground/10 md:min-h-[100vh] md:w-[100px] bg-secondary p-5 order-1 md:order-none md:fixed md:right-0 md:top-0  max-sm:sticky max-sm:top-0 z-40">
                 <RightSidebar />
               </div>
             </div>

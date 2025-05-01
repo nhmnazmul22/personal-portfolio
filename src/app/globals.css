@@ -128,18 +128,19 @@
     scrollbar-width: thin;
     scrollbar-color: var(--secondary) var(--background);
   }
+
   ::-webkit-scrollbar {
-    @apply w-2 h-2;
+    @apply bg-foreground/10 w-2 h-2;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-secondary rounded-sm;
+    @apply bg-secondary  rounded-sm;
   }
 }
 
 @layer components {
   .container {
-    @apply !max-w-5xl w-full mx-auto ps-3 pe-5;
+    @apply !max-w-5xl w-full mx-auto px-5;
   }
   .shadow-custom {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
