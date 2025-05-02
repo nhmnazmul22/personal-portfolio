@@ -1,4 +1,11 @@
-import { ServiceCategoryType, ServiceType, SkillsType } from "@/types";
+import {
+  AcademicEducationType,
+  EducationType,
+  ProfessionalCourseType,
+  ServiceCategoryType,
+  ServiceType,
+  SkillsType,
+} from "@/types";
 import {
   Building2,
   Cloud,
@@ -255,4 +262,116 @@ const skills: SkillsType[] = [
   },
 ];
 
-export { serviceCategories, services, skills };
+// Education Type
+const education: EducationType = {
+  academicEducation: [
+    {
+      id: 1,
+      instituteName: "Govt. Tolaram College and University",
+      session: "2023-2024",
+      duration: "4 Years (Expected - 2028)",
+      department: "English",
+      subject_group: "BA Hon's",
+      certificateName: "Bachelors of Art's",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    },
+    {
+      id: 2,
+      instituteName: "Sanarpar Rowshan Ara Degree College",
+      session: "2021-2022",
+      subject_group: "Business Studies",
+      certificateName: "HSC (Higher Secondary Certificate)",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    },
+    {
+      id: 3,
+      instituteName: "Alhaz Abdur Razzak Islamia High School",
+      session: "2019-2020",
+      subject_group: "Business Studies",
+      certificateName: "SSC (Secondary School Certificate)",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    },
+  ],
+  professionalCourse: [
+    {
+      id: 1,
+      provider: "Ostad",
+      duration: "1 Years",
+      courseName: "Full Stack Web Development with JavaScript (MERN)",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    },
+    {
+      id: 2,
+      provider: "Learn With Summit",
+      duration: "2 Months",
+      courseName: "Think in a Redux way",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    },
+  ],
+};
+
+const academicEducation: AcademicEducationType[] = [
+  {
+    id: 1,
+    instituteName: "Govt. Tolaram College and University",
+    session: "2023-2024",
+    duration: "4 Years (Expected - 2028)",
+    department: "English",
+    subject_group: "BA Hon's",
+    certificateName: "Bachelors of Art's",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+  },
+  {
+    id: 2,
+    instituteName: "Sanarpar Rowshan Ara Degree College",
+    session: "2021-2022",
+    subject_group: "Business Studies",
+    certificateName: "HSC (Higher Secondary Certificate)",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+  },
+  {
+    id: 3,
+    instituteName: "Alhaz Abdur Razzak Islamia High School",
+    session: "2019-2020",
+    subject_group: "Business Studies",
+    certificateName: "SSC (Secondary School Certificate)",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+  },
+];
+
+// Professional Course Type
+const professionalCourse: ProfessionalCourseType[] = [
+  {
+    id: 1,
+    provider: "Ostad",
+    duration: "1 Years",
+    courseName: "Full Stack Web Development with JavaScript (MERN)",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+  },
+  {
+    id: 2,
+    provider: "Learn With Summit",
+    duration: "2 Months",
+    courseName: "Think in a Redux way",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+  },
+];
+
+export {
+  academicEducation,
+  education,
+  professionalCourse,
+  serviceCategories,
+  services,
+  skills,
+};

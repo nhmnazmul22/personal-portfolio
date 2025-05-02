@@ -28,4 +28,36 @@ interface SkillsType {
   skills: SkillType[];
 }
 
-export type { ServiceCategoryType, ServiceType, SkillsType };
+interface AcademicEducationType {
+  id: number | string;
+  instituteName: string;
+  duration?: string;
+  session?: string;
+  department?: string;
+  subject_group: string;
+  certificateName: string;
+  description: string;
+}
+
+// Professional Course type
+interface ProfessionalCourseType {
+  id: number | string;
+  provider: string;
+  duration: string;
+  courseName: string;
+  description: string;
+}
+
+interface EducationType {
+  academicEducation: AcademicEducationType[];
+  professionalCourse: ProfessionalCourseType[];
+}
+
+export type {
+  AcademicEducationType,
+  EducationType,
+  ProfessionalCourseType,
+  ServiceCategoryType,
+  ServiceType,
+  SkillsType,
+};
