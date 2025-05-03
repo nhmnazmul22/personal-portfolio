@@ -1,7 +1,6 @@
 import {
-  AcademicEducationType,
   EducationType,
-  ProfessionalCourseType,
+  PortfolioType,
   ServiceCategoryType,
   ServiceType,
   SkillsType,
@@ -315,63 +314,135 @@ const education: EducationType = {
   ],
 };
 
-const academicEducation: AcademicEducationType[] = [
+const portfolio: PortfolioType[] = [
   {
-    id: 1,
-    instituteName: "Govt. Tolaram College and University",
-    session: "2023-2024",
-    duration: "4 Years (Expected - 2028)",
-    department: "English",
-    subject_group: "BA Hon's",
-    certificateName: "Bachelors of Art's",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    categoryName: "Frontend Services",
+    projects: [
+      {
+        name: "Responsive Landing Page",
+        description:
+          "A modern, mobile-first product landing page with animations and form handling.",
+        technologyUsed: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/frontend-landing",
+      },
+      {
+        name: "Portfolio Website",
+        description:
+          "A personal portfolio built with React and styled-components.",
+        technologyUsed: ["React", "Styled-Components"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/portfolio",
+      },
+      {
+        name: "Portfolio Website",
+        description:
+          "A personal portfolio built with React and styled-components.",
+        technologyUsed: ["React", "Styled-Components"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/portfolio",
+      },
+    ],
   },
   {
-    id: 2,
-    instituteName: "Sanarpar Rowshan Ara Degree College",
-    session: "2021-2022",
-    subject_group: "Business Studies",
-    certificateName: "HSC (Higher Secondary Certificate)",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    categoryName: "Backend Services",
+    projects: [
+      {
+        name: "RESTful API for Blog",
+        description:
+          "Node.js and Express API with CRUD functionality and MongoDB integration.",
+        technologyUsed: ["Node.js", "Express", "MongoDB"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/blog-api-docs",
+      },
+      {
+        name: "JWT Auth System",
+        description:
+          "A secure authentication system using JWT, bcrypt, and role-based access.",
+        technologyUsed: ["Node.js", "Express", "JWT", "MongoDB"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/auth-system",
+      },
+      {
+        name: "JWT Auth System",
+        description:
+          "A secure authentication system using JWT, bcrypt, and role-based access.",
+        technologyUsed: ["Node.js", "Express", "JWT", "MongoDB"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/auth-system",
+      },
+    ],
   },
   {
-    id: 3,
-    instituteName: "Alhaz Abdur Razzak Islamia High School",
-    session: "2019-2020",
-    subject_group: "Business Studies",
-    certificateName: "SSC (Secondary School Certificate)",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
+    categoryName: "Full Stack Solutions",
+    projects: [
+      {
+        name: "E-commerce Platform",
+        description:
+          "A full-featured e-commerce website with cart, admin panel, and payment gateway.",
+        technologyUsed: ["React", "Redux", "Node.js", "Express", "MongoDB"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/fullstack-ecommerce",
+      },
+      {
+        name: "Task Manager App",
+        description:
+          "Full stack to-do app with user authentication and real-time task syncing.",
+        technologyUsed: ["React", "Node.js", "Express", "MongoDB"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/task-manager",
+      },
+      {
+        name: "Task Manager App",
+        description:
+          "Full stack to-do app with user authentication and real-time task syncing.",
+        technologyUsed: ["React", "Node.js", "Express", "MongoDB"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/task-manager",
+      },
+    ],
+  },
+  {
+    categoryName: "Maintenance and Support",
+    projects: [
+      {
+        name: "Website Performance Optimization",
+        description:
+          "Ongoing work optimizing performance and fixing bugs for a production website.",
+        technologyUsed: ["Lighthouse", "Webpack", "React"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/performance-support",
+      },
+      {
+        name: "Legacy Code Refactoring",
+        description:
+          "Modernizing an old JavaScript codebase and migrating to React.",
+        technologyUsed: ["JavaScript", "React", "Git"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/refactor",
+      },
+      {
+        name: "Legacy Code Refactoring",
+        description:
+          "Modernizing an old JavaScript codebase and migrating to React.",
+        technologyUsed: ["JavaScript", "React", "Git"],
+        thumbnailUrl:
+          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+        liveLinkUrl: "https://example.com/refactor",
+      },
+    ],
   },
 ];
 
-// Professional Course Type
-const professionalCourse: ProfessionalCourseType[] = [
-  {
-    id: 1,
-    provider: "Ostad",
-    duration: "1 Years",
-    courseName: "Full Stack Web Development with JavaScript (MERN)",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
-  },
-  {
-    id: 2,
-    provider: "Learn With Summit",
-    duration: "2 Months",
-    courseName: "Think in a Redux way",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!",
-  },
-];
-
-export {
-  academicEducation,
-  education,
-  professionalCourse,
-  serviceCategories,
-  services,
-  skills,
-};
+export { education, portfolio, serviceCategories, services, skills };

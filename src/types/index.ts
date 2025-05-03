@@ -53,10 +53,25 @@ interface EducationType {
   professionalCourse: ProfessionalCourseType[];
 }
 
+interface ProjectType {
+  name: string;
+  description: string;
+  technologyUsed: string[];
+  thumbnailUrl: string;
+  liveLinkUrl: string;
+}
+
+interface PortfolioType {
+  categoryName: string;
+  projects: ProjectType[];
+}
+
 export type {
   AcademicEducationType,
   EducationType,
+  PortfolioType,
   ProfessionalCourseType,
+  ProjectType,
   ServiceCategoryType,
   ServiceType,
   SkillsType,
