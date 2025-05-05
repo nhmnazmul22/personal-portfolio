@@ -66,8 +66,21 @@ interface PortfolioType {
   projects: ProjectType[];
 }
 
+interface BlogType {
+  id: number | string;
+  title: string;
+  shortDes: string;
+  thumbnail: string;
+  description?: string;
+  publishedDate: Date;
+  tags: string[];
+  category: string[];
+  authorName: string;
+}
+
 export type {
   AcademicEducationType,
+  BlogType,
   EducationType,
   PortfolioType,
   ProfessionalCourseType,

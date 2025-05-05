@@ -1,4 +1,5 @@
 import {
+  BlogType,
   EducationType,
   PortfolioType,
   ServiceCategoryType,
@@ -261,7 +262,7 @@ const skills: SkillsType[] = [
   },
 ];
 
-// Education Type
+// Education Constant
 const education: EducationType = {
   academicEducation: [
     {
@@ -314,6 +315,7 @@ const education: EducationType = {
   ],
 };
 
+// Portfolio Constant
 const portfolio: PortfolioType[] = [
   {
     categoryName: "Frontend Services",
@@ -445,4 +447,78 @@ const portfolio: PortfolioType[] = [
   },
 ];
 
-export { education, portfolio, serviceCategories, services, skills };
+// Blogs Constant
+const blogs: BlogType[] = [
+  {
+    id: 1,
+    title: "Mastering React useEffect: A Beginner’s Guide",
+    shortDes:
+      "Learn how to properly use useEffect to manage side effects in your React applications.",
+    thumbnail:
+      "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+    description:
+      "The useEffect hook is one of the most commonly used hooks in React. In this article, we'll break down its usage, how to manage dependencies, avoid infinite loops, and structure your cleanup functions properly.",
+    publishedDate: new Date("2024-12-15"),
+    tags: ["React", "Hooks", "Frontend"],
+    category: ["React", "JavaScript"],
+    authorName: "Nhm Nazmul",
+  },
+  {
+    id: 2,
+    title: "What is the MERN Stack? Explained for Beginners",
+    shortDes:
+      "An overview of MongoDB, Express, React, and Node.js, and how they come together to build full-stack apps.",
+    thumbnail:
+      "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+    description:
+      "MERN Stack is a popular JavaScript stack used for building modern web applications. It consists of MongoDB, Express.js, React.js, and Node.js. Learn how they work together and why it's a great choice for full-stack development.",
+    publishedDate: new Date("2025-01-10"),
+    tags: ["MERN", "Full Stack", "Web Development"],
+    category: ["Full Stack", "Technology"],
+    authorName: "Nhm Nazmul",
+  },
+  {
+    id: 3,
+    title: "10 Common JavaScript Mistakes and How to Avoid Them",
+    shortDes:
+      "Improve your JavaScript code by avoiding these common beginner mistakes.",
+    thumbnail:
+      "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+    description:
+      "Whether you're just starting with JavaScript or already building projects, knowing what not to do is just as important. This post highlights 10 common pitfalls and shows how to fix or avoid them.",
+    publishedDate: new Date("2025-01-25"),
+    tags: ["JavaScript", "Tips", "Bugs"],
+    category: ["JavaScript", "Best Practices"],
+    authorName: "Nhm Nazmul",
+  },
+  {
+    id: 4,
+    title: "Optimizing Web Performance for Better UX",
+    shortDes:
+      "Learn how to make your site load faster and feel smoother with real-world optimization tips.",
+    thumbnail:
+      "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+    description:
+      "Performance is key to keeping users engaged. In this blog, we’ll explore best practices like image optimization, lazy loading, code splitting, and using tools like Lighthouse and Webpack.",
+    publishedDate: new Date("2025-02-05"),
+    tags: ["Performance", "Frontend", "UX"],
+    category: ["Frontend", "Optimization"],
+    authorName: "Nhm Nazmul",
+  },
+  {
+    id: 5,
+    title: "How to Build a REST API with Node.js and Express",
+    shortDes:
+      "Step-by-step tutorial to build a clean and scalable REST API using Express.",
+    thumbnail:
+      "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
+    description:
+      "This guide walks you through setting up a RESTful API using Node.js and Express, with routing, middleware, error handling, and a MongoDB connection.",
+    publishedDate: new Date("2025-02-20"),
+    tags: ["Node.js", "Express", "Backend"],
+    category: ["Backend", "API"],
+    authorName: "Nhm Nazmul",
+  },
+];
+
+export { blogs, education, portfolio, serviceCategories, services, skills };
