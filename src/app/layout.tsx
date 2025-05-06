@@ -2,6 +2,7 @@ import AppSidebar from "@/components/Layout/AppSidebar";
 import RightSidebar from "@/components/Layout/RightSidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
@@ -38,6 +39,7 @@ export default function RootLayout({
               <div className="w-full sm:h-[80px] border-b md:border-s md:border-b-0 border-foreground/10 md:min-h-[100vh] md:w-[100px] bg-secondary p-5 order-1 md:order-none md:fixed md:right-0 md:top-0  max-sm:sticky max-sm:top-0 z-40">
                 <RightSidebar />
               </div>
+              <Toaster />
             </div>
           </SidebarProvider>
         </ThemeProvider>

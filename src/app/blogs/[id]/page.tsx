@@ -15,7 +15,7 @@ const BlogDetailsPage = async ({
   );
 
   return (
-    <div className="container py-5">
+    <section className="container py-5">
       <div className="bg-secondary w-full max-h-screen border border-muted-foreground/10 p-5 rounded-md">
         <figure className="rounded-lg overflow-hidden relative">
           {blog && (
@@ -63,7 +63,7 @@ const BlogDetailsPage = async ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,7 +8,7 @@ const ServiceCard: React.FC<ServiceType> = ({
   category,
 }) => {
   return (
-    <div className="bg-secondary p-5 rounded shadow-custom border border-foreground/10">
+    <div className="bg-secondary p-5 rounded shadow border border-foreground/10">
       <div className="bg-custom-yellow w-18 h-18 rounded-full flex items-center justify-center mb-3">
         {icon}
       </div>

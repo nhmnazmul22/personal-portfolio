@@ -4,7 +4,7 @@ import { Progress } from "./ui/progress";
 
 const SkillsCard: React.FC<SkillsType> = ({ category, skills }) => {
   return (
-    <div className="bg-secondary p-5 rounded-md shadow-custom border border-muted-foreground/10">
+    <div className="bg-secondary p-5 rounded-md shadow border border-muted-foreground/10">
       <h3 className="text-lg font-medium w-fit border-b border-foreground/15">
         {category}
       </h3>

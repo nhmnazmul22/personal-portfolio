@@ -13,7 +13,7 @@ const BlogCard: React.FC<BlogType> = ({
   authorName,
 }) => {
   return (
-    <div className="bg-secondary p-5 rounded-md shadow-custom border border-muted-foreground/10">
+    <div className="bg-secondary p-5 rounded-md shadow border border-muted-foreground/10">
       <Link href={`/blogs/${id}`} className="relative block">
         <Image
           src={thumbnail}

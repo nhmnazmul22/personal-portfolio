@@ -1,5 +1,11 @@
 import { JSX } from "react";
 
+type StateType = {
+  successful: boolean;
+  error: boolean;
+  errorMsg: string;
+};
+
 // Service Types
 interface ServiceType {
   title: string;
@@ -88,4 +94,5 @@ export type {
   ServiceCategoryType,
   ServiceType,
   SkillsType,
+  StateType,
 };
