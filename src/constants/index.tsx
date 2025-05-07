@@ -223,7 +223,7 @@ const serviceCategories: ServiceCategoryType[] = [
 const skills: SkillsType[] = [
   {
     category: "Frontend Development",
-    icon: <Code2 />,
+    icon: <Code2 size={22} />,
     skills: [
       { name: "HTML & CSS", percent: 95 },
       { name: "JavaScript", percent: 85 },
@@ -235,7 +235,7 @@ const skills: SkillsType[] = [
   },
   {
     category: "Backend Development",
-    icon: <Server />,
+    icon: <Server size={22} />,
     skills: [
       { name: "Node.js", percent: 85 },
       { name: "Express.js", percent: 80 },
@@ -246,7 +246,7 @@ const skills: SkillsType[] = [
   },
   {
     category: "Tools & Workflow",
-    icon: <Wrench />,
+    icon: <Wrench size={22} />,
     skills: [
       { name: "Git & GitHub", percent: 90 },
       { name: "VS Code, WebStorm", percent: 95 },
@@ -257,7 +257,7 @@ const skills: SkillsType[] = [
   },
   {
     category: "Soft Skills",
-    icon: <Users />,
+    icon: <Users size={22} />,
     skills: [
       { name: "Problem-Solving", percent: 60 },
       { name: "Teamwork", percent: 85 },
