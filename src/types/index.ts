@@ -31,6 +31,7 @@ type SkillType = {
 // Skills Types
 interface SkillsType {
   category: string;
+  icon: JSX.Element;
   skills: SkillType[];
 }
 

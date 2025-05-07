@@ -29,6 +29,7 @@ import {
   ServerCog,
   ShieldCheck,
   ShoppingCart,
+  Users,
   Wrench,
 } from "lucide-react";
 
@@ -222,42 +223,46 @@ const serviceCategories: ServiceCategoryType[] = [
 const skills: SkillsType[] = [
   {
     category: "Frontend Development",
+    icon: <Code2 />,
     skills: [
-      { name: "React.js", percent: 90 },
-      { name: "JavaScript (ES6+)", percent: 85 },
-      { name: "HTML5 & CSS3", percent: 95 },
-      { name: "Tailwind CSS / Bootstrap", percent: 90 },
-      { name: "Redux / Context API", percent: 80 },
-      { name: "Next.js (basic)", percent: 60 },
+      { name: "HTML & CSS", percent: 95 },
+      { name: "JavaScript", percent: 85 },
+      { name: "Tailwind CSS & Bootstrap", percent: 90 },
+      { name: "React.js", percent: 80 },
+      { name: "Redux & Zustand", percent: 90 },
+      { name: "Next.js", percent: 80 },
     ],
   },
   {
     category: "Backend Development",
+    icon: <Server />,
     skills: [
       { name: "Node.js", percent: 85 },
       { name: "Express.js", percent: 80 },
       { name: "MongoDB & Mongoose", percent: 80 },
-      { name: "JWT & bcrypt", percent: 75 },
+      { name: "JWT & bcrypt", percent: 85 },
       { name: "RESTful API", percent: 85 },
     ],
   },
   {
     category: "Tools & Workflow",
+    icon: <Wrench />,
     skills: [
       { name: "Git & GitHub", percent: 90 },
-      { name: "VS Code", percent: 95 },
-      { name: "Postman", percent: 85 },
-      { name: "MongoDB Atlas / Compass", percent: 80 },
-      { name: "Vercel / Netlify / Render", percent: 90 },
+      { name: "VS Code, WebStorm", percent: 95 },
+      { name: "Postman & Thunder Client", percent: 85 },
+      { name: "MongoDB Atlas", percent: 90 },
+      { name: "Vercel, Netlify, Render", percent: 80 },
     ],
   },
   {
     category: "Soft Skills",
+    icon: <Users />,
     skills: [
-      { name: "Problem-Solving", percent: 90 },
+      { name: "Problem-Solving", percent: 60 },
       { name: "Teamwork", percent: 85 },
       { name: "Continuous Learning", percent: 95 },
-      { name: "Communication", percent: 85 },
+      { name: "Communication", percent: 80 },
     ],
   },
 ];

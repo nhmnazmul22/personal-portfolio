@@ -9,8 +9,13 @@ const SkillsPage = () => {
         subTitle="As a passionate and detail-oriented MERN Stack Developer, I specialize in building dynamic, responsive, and user-friendly web applications"
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
-        {skills.map(({ category, skills }, index) => (
-          <SkillsCard key={index} category={category} skills={skills} />
+        {skills.map(({ category, skills, icon }, index) => (
+          <SkillsCard
+            key={index}
+            category={category}
+            icon={icon}
+            skills={skills}
+          />
         ))}
       </div>
     </section>
