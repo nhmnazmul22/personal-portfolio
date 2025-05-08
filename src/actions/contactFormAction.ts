@@ -9,7 +9,7 @@ export const action = async (
   const email = formData.get("email") as string;
   const phoneNumber = formData.get("email") as string;
   const service = formData.get("service") as string;
-  const message = formData.get("message") as string;
+  // const message = formData.get("message") as string;
   const privacyPolicy = formData.get("privacyPolicy") as string;
   const termsCondition = formData.get("termsCondition") as string;
 

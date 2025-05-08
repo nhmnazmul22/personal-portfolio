@@ -7,7 +7,7 @@ const BlogPage = () => {
     <section className="container py-5">
       <PageHeading
         title="My Blogs"
-        subTitle=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ducimus laboriosam eaque praesentium adipisci sequi!"
+        subTitle="Insights, tips, and thoughts on web development, coding, and technology — shared for fellow learners and developers"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 mt-5">

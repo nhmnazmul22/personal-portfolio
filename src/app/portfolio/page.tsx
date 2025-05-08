@@ -8,7 +8,7 @@ const PortfolioPage = () => {
     <section className="container my-5">
       <PageHeading
         title="My Portfolio"
-        subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officia dignissimos neque totam repudiandae laudantium quam in molestias enim aliquam?"
+        subTitle="Explore a collection of projects that highlight my journey as a developer, from concept to execution."
       />
       <PortfolioProvider>
         <div className="mt-5">

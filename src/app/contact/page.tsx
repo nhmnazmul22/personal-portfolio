@@ -33,7 +33,7 @@ const ContactPage = () => {
       <div className="p-5">
         <PageHeading
           title="Contact Me"
-          subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellat provident eveniet delectus culpa nisi!"
+          subTitle="Have a project in mind or just want to connect? Reach out, and let’s talk!"
         />
         <form
           action={formAction}

@@ -5,6 +5,7 @@ import SvgAnimationIcons from "@/components/SvgAnimationIcons";
 import { Button } from "@/components/ui/button";
 import { serviceCategories } from "@/constants";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,22 +37,29 @@ export default function Home() {
             </InitialScale>
             <div className="flex items-center justify-start space-x-4 mt-7">
               <InitialScale>
-                <Button className="bg-custom-yellow text-sm md:text-base group rounded hover:bg-custom-yellow w-[150px] h-[40px] hover:scale-[1.02]">
-                  Hire Me
-                  <ArrowRight
-                    size={16}
-                    className="transition-translate group-hover:translate-x-1 duration-200"
-                  />
-                </Button>
+                <Link
+                  href="https://www.upwork.com/freelancers/~01e4bb6efdd3ecb887"
+                  target="_blank"
+                >
+                  <Button className="bg-custom-yellow text-sm md:text-base group rounded hover:bg-custom-yellow w-[150px] h-[40px] hover:scale-[1.02]">
+                    Hire Me
+                    <ArrowRight
+                      size={16}
+                      className="transition-translate group-hover:translate-x-1 duration-200"
+                    />
+                  </Button>
+                </Link>
               </InitialScale>
               <InitialScale>
-                <Button className="text-sm md:text-base group rounded  w-[150px] h-[40px] hover:scale-[1.02]">
-                  Download CV
-                  <ArrowRight
-                    size={16}
-                    className="transition-translate group-hover:translate-x-1 duration-200"
-                  />
-                </Button>
+                <Link href="/cv.pdf" download="cv.pdf" target="_blank">
+                  <Button className="text-sm md:text-base group rounded  w-[150px] h-[40px] hover:scale-[1.02]">
+                    Download CV
+                    <ArrowRight
+                      size={16}
+                      className="transition-translate group-hover:translate-x-1 duration-200"
+                    />
+                  </Button>
+                </Link>
               </InitialScale>
             </div>
           </div>
@@ -60,8 +68,7 @@ export default function Home() {
       <div className="mt-20">
         <PageHeading
           title="Services"
-          subTitle="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+          subTitle="Empowering your business with innovative, reliable, and tailored digital solutions. From web development to strategy, we’re here to help you grow with confidence"
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
           {serviceCategories.map(({ title, shortDes, icon }, index) => (

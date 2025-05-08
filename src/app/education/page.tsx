@@ -9,7 +9,7 @@ const EducationPage = () => {
     <section className="container my-5">
       <PageHeading
         title="Education"
-        subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at dignissimos aliquid praesentium, harum mollitia laborum nulla consequatur accusantium natus!"
+        subTitle="A journey of learning, growth, and continuous improvement through academic and technical education."
       />
 
       <div className="mt-5 grid grid-cols-1 gap-5">

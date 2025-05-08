@@ -27,20 +27,24 @@ const CategoryButton = () => {
         >
           All Project
         </Button>
-        {portfolio.map(({ categoryName }, index) => (
-          <Button
-            key={index}
-            variant="ghost"
-            className={cn(
-              "text-center py-1 px-2 rounded font-semibold max-sm:w-full cursor-pointer  hover:scale-[1.02] duration-200",
-              category === categoryName &&
-                "bg-custom-yellow !text-background hover:!bg-custom-yellow"
-            )}
-            onClick={() => handleCategory(categoryName)}
-          >
-            {categoryName}
-          </Button>
-        ))}
+        {portfolio.map(({ categoryName, projects }, index) => {
+          if (projects.length > 0) {
+            return (
+              <Button
+                key={index}
+                variant="ghost"
+                className={cn(
+                  "text-center py-1 px-2 rounded font-semibold max-sm:w-full cursor-pointer  hover:scale-[1.02] duration-200",
+                  category === categoryName &&
+                    "bg-custom-yellow !text-background hover:!bg-custom-yellow"
+                )}
+                onClick={() => handleCategory(categoryName)}
+              >
+                {categoryName}
+              </Button>
+            );
+          }
+        })}
       </div>
     </InitialTransition>
   );

@@ -326,31 +326,56 @@ const portfolio: PortfolioType[] = [
     categoryName: "Frontend Services",
     projects: [
       {
-        name: "Responsive Landing Page",
+        name: "React SAAS Landing Page",
         description:
-          "A modern, mobile-first product landing page with animations and form handling.",
-        technologyUsed: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/frontend-landing",
+          "A modern, SaaS landing page with animations and form handling.",
+        technologyUsed: ["React", "Tailwind CSS", "Framer Motion"],
+        thumbnailUrl: "/react-saas-landing-page.png",
+        liveLinkUrl: "https://react-saas-landing-page.vercel.app/",
       },
       {
-        name: "Portfolio Website",
+        name: "React Js Portfolio Website",
         description:
           "A personal portfolio built with React and styled-components.",
-        technologyUsed: ["React", "Styled-Components"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/portfolio",
+        technologyUsed: ["React", "Bootstrap", "Framer Motion"],
+        thumbnailUrl: "/personal-protfolio-react-js-app.png",
+        liveLinkUrl: "https://portfolio-template-nine-gilt.vercel.app/",
       },
       {
-        name: "Portfolio Website",
+        name: "Next Js Personal Portfolio Website",
         description:
-          "A personal portfolio built with React and styled-components.",
-        technologyUsed: ["React", "Styled-Components"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/portfolio",
+          "A personal portfolio built with Next.js, React and shadcn UI Components.",
+        technologyUsed: [
+          "Next.js",
+          "React.js",
+          "shadcnUI",
+          "Framer Motion",
+          "Tailwind CSS",
+        ],
+        thumbnailUrl: "/Personal-protfoli-next-js-app.png",
+        liveLinkUrl: "https://github.com/nhmnazmul22/personal-portfolio",
+      },
+      {
+        name: "Todoist AI - React Todo App",
+        description:
+          "Todoist AI is React todo management application, there we integrate Gemini Api's",
+        technologyUsed: [
+          "Next.js",
+          "React.js",
+          "shadcnUI",
+          "Tailwind CSS",
+          "Gemini API",
+        ],
+        thumbnailUrl: "/todo-app-react-js.png",
+        liveLinkUrl: "https://github.com/nhmnazmul22/todoist-ai",
+      },
+      {
+        name: "User Management React.js Application",
+        description:
+          "With this application we can manage (CRUD) operation using user data",
+        technologyUsed: ["React.js", "Bootstrap", "React Redux"],
+        thumbnailUrl: "/user-management.png",
+        liveLinkUrl: "/",
       },
     ],
   },
@@ -358,31 +383,20 @@ const portfolio: PortfolioType[] = [
     categoryName: "Backend Services",
     projects: [
       {
-        name: "RESTful API for Blog",
+        name: "Drive Flow - A Car Rental Marketplace Rest APIs",
         description:
-          "Node.js and Express API with CRUD functionality and MongoDB integration.",
-        technologyUsed: ["Node.js", "Express", "MongoDB"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/blog-api-docs",
+          "Express.js API with CRUD functionality and Mongoose integration and JWT for authentication.",
+        technologyUsed: ["Node.js", "Express", "MongoDB", "JWT"],
+        thumbnailUrl: "/drive-flow-backend-project.png",
+        liveLinkUrl: "https://github.com/nhmnazmul22/Drive-flow",
       },
       {
-        name: "JWT Auth System",
+        name: "E-commerce Backend",
         description:
-          "A secure authentication system using JWT, bcrypt, and role-based access.",
+          "Rest APIs build with Express.js and Authentication Manage by JWT Token",
         technologyUsed: ["Node.js", "Express", "JWT", "MongoDB"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/auth-system",
-      },
-      {
-        name: "JWT Auth System",
-        description:
-          "A secure authentication system using JWT, bcrypt, and role-based access.",
-        technologyUsed: ["Node.js", "Express", "JWT", "MongoDB"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/auth-system",
+        thumbnailUrl: "/ecommerce-backend.png",
+        liveLinkUrl: "https://github.com/nhmnazmul22/mern-ecommerce",
       },
     ],
   },
@@ -390,65 +404,40 @@ const portfolio: PortfolioType[] = [
     categoryName: "Full Stack Solutions",
     projects: [
       {
-        name: "E-commerce Platform",
+        name: "MERN E-commerce Platform",
         description:
-          "A full-featured e-commerce website with cart, admin panel, and payment gateway.",
-        technologyUsed: ["React", "Redux", "Node.js", "Express", "MongoDB"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/fullstack-ecommerce",
+          "A full-featured e-commerce website with cart,filtering, sorting and order management",
+        technologyUsed: [
+          "React",
+          "Zustand",
+          "JWT",
+          "Node.js",
+          "Express",
+          "Mongoose",
+        ],
+        thumbnailUrl: "/Mern-ecommerce-platform.png",
+        liveLinkUrl: "/",
       },
       {
-        name: "Task Manager App",
+        name: "Code Solutions- Agency Platform",
         description:
-          "Full stack to-do app with user authentication and real-time task syncing.",
-        technologyUsed: ["React", "Node.js", "Express", "MongoDB"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/task-manager",
-      },
-      {
-        name: "Task Manager App",
-        description:
-          "Full stack to-do app with user authentication and real-time task syncing.",
-        technologyUsed: ["React", "Node.js", "Express", "MongoDB"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/task-manager",
+          "A full-featured Agency website with services and Admin panel to manage CRUD operations.",
+        technologyUsed: [
+          "React",
+          "Zustand",
+          "JWT",
+          "Node.js",
+          "Express",
+          "Mongoose",
+        ],
+        thumbnailUrl: "/coding-solutions-mern-applicaiton.png",
+        liveLinkUrl: "/https://github.com/nhmnazmul22/code-solutions",
       },
     ],
   },
   {
     categoryName: "Maintenance and Support",
-    projects: [
-      {
-        name: "Website Performance Optimization",
-        description:
-          "Ongoing work optimizing performance and fixing bugs for a production website.",
-        technologyUsed: ["Lighthouse", "Webpack", "React"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/performance-support",
-      },
-      {
-        name: "Legacy Code Refactoring",
-        description:
-          "Modernizing an old JavaScript codebase and migrating to React.",
-        technologyUsed: ["JavaScript", "React", "Git"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/refactor",
-      },
-      {
-        name: "Legacy Code Refactoring",
-        description:
-          "Modernizing an old JavaScript codebase and migrating to React.",
-        technologyUsed: ["JavaScript", "React", "Git"],
-        thumbnailUrl:
-          "https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg",
-        liveLinkUrl: "https://example.com/refactor",
-      },
-    ],
+    projects: [],
   },
 ];
 

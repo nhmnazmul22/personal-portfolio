@@ -155,12 +155,21 @@ const AppSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
         <Separator className="bg-primary" />
-        <Link href="/" className="w-full">
+        <Link
+          href="https://www.upwork.com/freelancers/~01e4bb6efdd3ecb887"
+          target="_blank"
+          className="w-full"
+        >
           <Button className="bg-custom-yellow text-md text-background hover:bg-custom-yellow hover:scale-[1.02] duration-200 w-full">
             Hire Me
           </Button>
         </Link>
-        <Link href="/" className="w-full">
+        <Link
+          href="/cv.pdf"
+          download="cv.pdf"
+          target="_blank"
+          className="w-full"
+        >
           <Button className=" text-md text-background  hover:scale-[1.02] duration-200 w-full">
             Download CV
           </Button>

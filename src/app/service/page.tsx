@@ -7,8 +7,8 @@ const page = () => {
     <section className="container py-5">
       <PageHeading
         title="My Services"
-        subTitle="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+        subTitle="Empowering your business with innovative, reliable, and tailored digital solutions.
+From web development to strategy, we’re here to help you grow with confidence"
       />
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 space-y-5 lg:space-x-4">
         {services.map(({ title, shortDes, longDes, icon, category }, index) => (
